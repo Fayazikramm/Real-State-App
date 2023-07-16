@@ -15,8 +15,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           primaryColor: Colors.purple,
+          backgroundColor: Color(0xfff4f5f4),
           textTheme: TextTheme(
               bodyText2: TextStyle(
+                  color: Colors.black,
+                  fontFamily: 'Oswald-VariableFont_wght.ttf',
+                  fontSize: 30),
+              bodyText1: TextStyle(
                   color: Colors.black,
                   fontFamily: 'Oswald-VariableFont_wght.ttf',
                   fontSize: 30))),

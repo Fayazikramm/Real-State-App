@@ -20,10 +20,25 @@ class UperComp extends StatelessWidget {
           body: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 10),
+                padding: const EdgeInsets.only(top: 10, left: 5),
                 child: Row(
                   children: [
-                    CircleAvatar(),
+                    Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.5),
+                            spreadRadius: 2,
+                            blurRadius: 3,
+                            offset: Offset(0, 3),
+                          ),
+                        ],
+                      ),
+                      child: CircleAvatar(
+                          radius: 24,
+                          backgroundImage: AssetImage('assets/download.jpg')),
+                    ),
                     Column(
                       children: [
                         Padding(
@@ -45,6 +60,31 @@ class UperComp extends StatelessWidget {
                         ),
                       ],
                     ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 60),
+                      child: Stack(children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 3,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: CircleAvatar(
+                            backgroundColor: Colors.white,
+                            child: Icon(
+                              Icons.notifications_none,
+                              size: 40,
+                            ),
+                          ),
+                        ),
+                      ]),
+                    )
                   ],
                 ),
               ),
@@ -53,6 +93,7 @@ class UperComp extends StatelessWidget {
                 child: Container(
                   decoration: BoxDecoration(
                       color: Color(0xfff7f9fa),
+                      border: Border.all(color: Colors.black),
                       borderRadius: BorderRadius.circular(15)),
                   child: const TextField(
                     decoration: InputDecoration(
@@ -72,6 +113,10 @@ class UperComp extends StatelessWidget {
                     height: 50,
                     width: 50,
                     decoration: BoxDecoration(color: Color(0xffDDF3FF)),
+                    child: Icon(
+                      Icons.house_sharp,
+                      color: Color(0xffc0eaff),
+                    ),
                   ),
                   SizedBox(
                     width: 30,
@@ -79,7 +124,11 @@ class UperComp extends StatelessWidget {
                   Container(
                     height: 50,
                     width: 50,
-                    decoration: BoxDecoration(color: Color(0xffd95a85)),
+                    decoration: BoxDecoration(color: Color(0xffecfee9)),
+                    child: Icon(
+                      Icons.maps_home_work_rounded,
+                      color: Color(0xffb8ffa9),
+                    ),
                   ),
                   SizedBox(
                     width: 30,
@@ -88,9 +137,12 @@ class UperComp extends StatelessWidget {
                     height: 50,
                     width: 50,
                     decoration: BoxDecoration(
-                      color: Color(0xff675ad9),
+                      color: Color(0xfffee6fc),
                     ),
-                    child: Icon(Icons.villa),
+                    child: Icon(
+                      Icons.villa_rounded,
+                      color: Color(0xffffbff4),
+                    ),
                   ),
                   SizedBox(
                     width: 30,
@@ -98,9 +150,56 @@ class UperComp extends StatelessWidget {
                   Container(
                     height: 50,
                     width: 50,
-                    decoration: BoxDecoration(color: Color(0xff83d95a)),
+                    decoration: BoxDecoration(color: Color(0xfffef5d7)),
+                    child: Icon(
+                      Icons.cottage,
+                      color: Color(0xffffe082),
+                    ),
                   )
                 ],
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 05),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      height: 20,
+                      width: 50,
+                      color: Colors.transparent,
+                      child: Center(child: Text("House")),
+                    ),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    Container(
+                      height: 20,
+                      width: 50,
+                      color: Colors.transparent,
+                      child: Center(
+                          child:
+                              Text("Appartment", textAlign: TextAlign.center)),
+                    ),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    Container(
+                      height: 20,
+                      width: 50,
+                      color: Colors.transparent,
+                      child: Center(child: Text("Villa")),
+                    ),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    Container(
+                      height: 20,
+                      width: 50,
+                      color: Colors.transparent,
+                      child: Center(child: Text("Cottage")),
+                    ),
+                  ],
+                ),
               )
             ],
           ),
