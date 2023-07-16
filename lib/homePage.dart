@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/button.dart';
-import 'package:flutter_application_1/comp.dart';
+import 'package:flutter_application_1/Page2.dart';
 import 'package:flutter_application_1/middletext1.dart';
 
 class HomePage extends StatefulWidget {
@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       Text1(),
-      contButton()
+      ContButton()
     ]);
   }
 }
