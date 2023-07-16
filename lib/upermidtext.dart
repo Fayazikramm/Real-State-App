@@ -5,23 +5,38 @@ class UperMiddleText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.only(left: 100),
-          child: Container(
-            child: Text("current location"),
-          ),
-        ),
-        Center(
-          child: Padding(
+    return Padding(
+      padding: const EdgeInsets.only(left: 00),
+      child: Column(
+        children: [
+          Padding(
             padding: const EdgeInsets.only(left: 100),
-            child: Row(
-              children: [Icon(Icons.location_on_outlined), Text("Sylhet,Ban")],
+            // ignore: avoid_unnecessary_containers
+            child: Container(
+              child: const Text(
+                "current location",
+              ),
             ),
           ),
-        ),
-      ],
+          const Center(
+            child: Padding(
+              padding: EdgeInsets.only(left: 70),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.location_on_outlined,
+                    color: Color(0xffdef4ff),
+                  ),
+                  Text(
+                    "Sylhet,Ban",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  )
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

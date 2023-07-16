@@ -17,9 +17,9 @@ class ContButton extends StatelessWidget {
           height: 50,
           width: 300,
           decoration: BoxDecoration(
-              color: Color(0xffFF8BEC),
+              color: const Color(0xffFF8BEC),
               borderRadius: BorderRadius.circular(20)),
-          child: Center(
+          child: const Center(
               child: Text(
             "Continue",
           )),

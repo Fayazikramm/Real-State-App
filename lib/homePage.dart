@@ -18,12 +18,12 @@ class _HomePageState extends State<HomePage> {
         height: 500,
         width: 360,
         child: Image(
-          image: AssetImage('assets/House1.jpg'),
+          image: const AssetImage('assets/House1.jpg'),
           fit: BoxFit.cover,
         ),
       ),
-      Text1(),
-      ContButton()
+      const Text1(),
+      const ContButton(),
     ]);
   }
 }
