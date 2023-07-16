@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'comp.dart';
+import 'Page2.dart';
 
-class contButton extends StatelessWidget {
-  const contButton({super.key});
+class ContButton extends StatelessWidget {
+  const ContButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class contButton extends StatelessWidget {
       child: GestureDetector(
         onTap: () {
           Navigator.push(context,
-              MaterialPageRoute(builder: (context) => const UperComp()));
+              MaterialPageRoute(builder: (context) => const Page2()));
         },
         child: Container(
           height: 50,

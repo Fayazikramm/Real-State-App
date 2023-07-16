@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/comp.dart';
+import 'package:flutter_application_1/Page2.dart';
 import 'homePage.dart';
 
 void main() {
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         body: HomePage(),
       ),
       routes: {
-        "/one": (context) => UperComp(),
+        "/one": (context) => Page2(),
       },
     );
   }
