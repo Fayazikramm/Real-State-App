@@ -17,7 +17,7 @@ class Avatar1 extends StatelessWidget {
           ),
         ],
       ),
-      child: CircleAvatar(
+      child:const CircleAvatar(
           radius: 24, backgroundImage: AssetImage('assets/download.jpg')),
     );
   }

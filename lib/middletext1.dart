@@ -10,7 +10,7 @@ class Text1 extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 20),
           child: Container(
-            child: Text(
+            child: const Text(
               "Your One-Stop Real Estate Solution",
               style: TextStyle(color: Color(0xff242425)),
               textAlign: TextAlign.center,
@@ -20,8 +20,9 @@ class Text1 extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 5),
           child: Center(
+            // ignore: avoid_unnecessary_containers
             child: Container(
-              child: Text(
+              child: const Text(
                 "Find your dream home with advance search ",
                 style: TextStyle(fontSize: 17, color: Color(0xffb6b7b6)),
               ),
@@ -29,7 +30,7 @@ class Text1 extends StatelessWidget {
           ),
         ),
         Container(
-          child: Text(
+          child: const Text(
             "and personalized recommendation",
             style: TextStyle(fontSize: 17, color: Color(0xffb6b7b6)),
           ),

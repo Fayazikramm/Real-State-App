@@ -7,13 +7,31 @@ class Middle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        const SizedBox(height: 10),
         Row(
           children: [
             Container(
-              child: Text("Popular Properties "),
+              child: const Padding(
+                padding: EdgeInsets.only(left: 10),
+                child: Text(
+                  "Popular Properties ",
+                  style: TextStyle(
+                      fontFamily: 'Oswald-Bold.ttf',
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
             ),
-            Container(
-              child: Text("See more"),
+            Padding(
+              padding: const EdgeInsets.only(left: 90),
+              child: Container(
+                child: const Center(
+                  child: Text(
+                    "View More",
+                    style: TextStyle(color: Color(0xff9a9a9b)),
+                  ),
+                ),
+              ),
             )
           ],
         )

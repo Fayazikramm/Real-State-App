@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           primaryColor: Colors.purple,
-          backgroundColor: Color(0xfff4f5f4),
-          textTheme: TextTheme(
+          backgroundColor: const Color(0xfff4f5f4),
+          textTheme: const TextTheme(
               bodyText2: TextStyle(
                   color: Colors.black,
                   fontFamily: 'Oswald-VariableFont_wght.ttf',
@@ -25,11 +25,11 @@ class MyApp extends StatelessWidget {
                   color: Colors.black,
                   fontFamily: 'Oswald-VariableFont_wght.ttf',
                   fontSize: 30))),
-      home: Scaffold(
+      home: const Scaffold(
         body: HomePage(),
       ),
       routes: {
-        "/one": (context) => Page2(),
+        "/one": (context) => const Page2(),
       },
     );
   }
