@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Page3.dart';
-import 'package:flutter_application_1/file.dart';
+
 
 class Window1 extends StatelessWidget {
   const Window1({super.key});

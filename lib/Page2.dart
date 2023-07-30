@@ -8,7 +8,7 @@ import 'package:flutter_application_1/middleitem.dart';
 import 'package:flutter_application_1/search.dart';
 import 'package:flutter_application_1/upermidtext.dart';
 import 'package:flutter_application_1/windows.dart';
-
+import 'window2.dart';
 class Page2 extends StatelessWidget {
   const Page2({Key? key}) : super(key: key);
 
