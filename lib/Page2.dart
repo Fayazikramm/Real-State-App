@@ -42,7 +42,7 @@ class Page2 extends StatelessWidget {
               ),
               Padding(padding: EdgeInsets.only(top: 20), child: Search()),
               SizedBox(
-                height: 20,
+                height: 10,
               ),
               dabai(),
               Padding(
@@ -50,12 +50,18 @@ class Page2 extends StatelessWidget {
                 child: Naam(),
               ),
               SizedBox(
-                height: 20,
+                height: 10,
               ),
               Middle(),
               Padding(
-                padding: EdgeInsets.only(top: 20),
+                padding: EdgeInsets.only(top: 10),
                 child: Window1(),
+              ),
+              Padding(
+                padding: EdgeInsets.only(
+                  top: 10,
+                ),
+                child: Window2(),
               ),
             ],
           ),
