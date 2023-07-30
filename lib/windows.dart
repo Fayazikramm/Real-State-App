@@ -11,7 +11,7 @@ class Window1 extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 10),
           child: Container(
-            height: 170,
+            height: 180,
             width: 160,
             decoration: const BoxDecoration(
                 color: Color.fromARGB(255, 255, 252, 252),
@@ -33,10 +33,17 @@ class Window1 extends StatelessWidget {
                     Text(
                       "653C shingan mountain ",
                       style: TextStyle(fontSize: 10, color: Colors.black45),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Icon(
+                      Icons.arrow_circle_right,
+                      color: Colors.black45,
                     )
                   ],
                 ),
-               const Row(
+                const Row(
                   children: [
                     Text(
                       "5,067",
@@ -56,7 +63,7 @@ class Window1 extends StatelessWidget {
           width: 10,
         ),
         Container(
-          height: 170,
+          height: 180,
           width: 160,
           decoration: const BoxDecoration(
               color: Colors.white,
