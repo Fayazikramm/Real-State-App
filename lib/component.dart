@@ -51,7 +51,7 @@ class dabai extends StatelessWidget {
         Container(
           height: 60,
           width: 60,
-          decoration: BoxDecoration(color: const Color(0xfffef5d7)),
+          decoration: const BoxDecoration(color: Color(0xfffef5d7)),
           child: const Icon(
             Icons.cottage,
             color: Color(0xffffe082),

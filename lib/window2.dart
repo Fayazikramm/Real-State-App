@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Page3.dart';
-import 'package:flutter_application_1/file.dart';
-
-class Window1 extends StatelessWidget {
-  const Window1({super.key});
+import 'Page3.dart';
+class Window2 extends StatelessWidget {
+  const Window2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +18,8 @@ class Window1 extends StatelessWidget {
             child: Column(
               children: [
                 Image.asset(
-                  'assets/cottage.jpg',
+                  'assets/house33.jpg',
+                  height: 106,
                   fit: BoxFit.cover,
                 ),
                 const SizedBox(
@@ -30,7 +29,7 @@ class Window1 extends StatelessWidget {
                   children: [
                     Padding(
                       padding: EdgeInsets.only(left: 05),
-                      child: Text("The Premier Cottage"),
+                      child: Text("The Premier House"),
                     )
                   ],
                 ),
@@ -39,7 +38,7 @@ class Window1 extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(left: 05),
                       child: Text(
-                        "653C shingan mountain ",
+                        "653C street mall road  ",
                         style: TextStyle(fontSize: 10, color: Colors.black45),
                       ),
                     ),
@@ -57,7 +56,7 @@ class Window1 extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(left: 05),
                       child: Text(
-                        "5,067",
+                        "10,0000",
                         style: TextStyle(color: Colors.black45),
                       ),
                     ),
@@ -83,7 +82,7 @@ class Window1 extends StatelessWidget {
           child: Column(
             children: [
               Image.asset(
-                'assets/vila.jpg',
+                'assets/appartment.jpg',
                 height: 106,
                 fit: BoxFit.cover,
               ),
@@ -94,24 +93,24 @@ class Window1 extends StatelessWidget {
                 children: [
                   Padding(
                     padding: EdgeInsets.only(left: 05),
-                    child: Text("The premier Villa"),
+                    child: Text("The premier heights"),
                   )
                 ],
               ),
-               Row(
+              Row(
                 children: [
                   const Padding(
                     padding: EdgeInsets.only(left: 05),
                     child: Text(
-                      "Down town hill calfornia",
+                      "6th street wall town ",
                       style: TextStyle(fontSize: 10, color: Colors.black45),
                     ),
                   ),
                   const SizedBox(
-                    width: 15,
+                    width: 20,
                   ),
                   GestureDetector(
-                    onTap:  () {
+                    onTap: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -129,7 +128,7 @@ class Window1 extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(left: 05),
                     child: Text(
-                      "4,567",
+                      "7,000",
                       style: TextStyle(color: Colors.black45),
                     ),
                   ),
@@ -146,4 +145,3 @@ class Window1 extends StatelessWidget {
     );
   }
 }
-

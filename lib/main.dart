@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Page2.dart';
+import 'package:flutter_application_1/Page3.dart';
 import 'homePage.dart';
 
 void main() {
@@ -17,11 +18,11 @@ class MyApp extends StatelessWidget {
           primaryColor: Colors.purple,
           backgroundColor: const Color(0xfff4f5f4),
           textTheme: const TextTheme(
-              bodyText2: TextStyle(
+              bodyMedium: TextStyle(
                   color: Colors.black,
                   fontFamily: 'Oswald-VariableFont_wght.ttf',
                   fontSize: 30),
-              bodyText1: TextStyle(
+              bodyLarge: TextStyle(
                   color: Colors.black,
                   fontFamily: 'Oswald-VariableFont_wght.ttf',
                   fontSize: 30))),
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         "/one": (context) => const Page2(),
+      "/Page3":(context) => const Page3(),
       },
     );
   }

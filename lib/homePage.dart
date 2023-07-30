@@ -17,8 +17,8 @@ class _HomePageState extends State<HomePage> {
       Container(
         height: 500,
         width: 360,
-        child: Image(
-          image: const AssetImage('assets/House1.jpg'),
+        child: const Image(
+          image: AssetImage('assets/House1.jpg'),
           fit: BoxFit.cover,
         ),
       ),
