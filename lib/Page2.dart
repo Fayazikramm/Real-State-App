@@ -7,7 +7,7 @@ import 'package:flutter_application_1/middleitem.dart';
 
 import 'package:flutter_application_1/search.dart';
 import 'package:flutter_application_1/upermidtext.dart';
-
+import 'package:flutter_application_1/windows.dart';
 
 class Page2 extends StatelessWidget {
   const Page2({Key? key}) : super(key: key);
@@ -53,6 +53,10 @@ class Page2 extends StatelessWidget {
                 height: 20,
               ),
               Middle(),
+              Padding(
+                padding: EdgeInsets.only(top: 20),
+                child: Window1(),
+              ),
             ],
           ),
           bottomNavigationBar: BottomNavigationBar(
